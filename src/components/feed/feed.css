@@ -68,6 +68,15 @@
   line-height: 1;
 }
 
+.card-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.6;
+}
+
 .eyebrow {
   color: var(--accent-red);
 }
