@@ -1,20 +1,27 @@
-:root {
-  --light-gray: #eaeaea;
-  --medium-gray: #a2a2a2;
-  --dark-gray-2: #272727;
-  --dark-gray: #1a1a1a;
-  --accent-red: rgb(234, 115, 115);
-}
-
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 1em;
-  gap: 4px;
+  align-items: center;
+  padding: 1em 1em 1.5em 1em;
+  gap: 1em;
+}
+
+input {
+  width: 86%;
+  border-radius: 10em;
+  padding: 1em 1em;
+  border: none;
 }
 
 a {
   background-color: transparent;
   color: var(--accent-red);
   padding: 0;
+}
+
+.footer-credit {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }

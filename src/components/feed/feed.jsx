@@ -18,7 +18,7 @@ const calculateTimeAgo = (publishedAt) => {
   }
 };
 
-const Feed = () => {
+const Feed = ({ query }) => {
   const [articles, setArticles] = useState([]);
   const [visible, setVisible] = useState(10);
 
@@ -52,7 +52,7 @@ const Feed = () => {
 
   return (
     <>
-      <div>
+      <div className="scrollable-container">
         <div className="main-container">
           <h2 className="top-stories">Top Stories</h2>
         </div>

@@ -9,9 +9,11 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Feed />
-      <Footer />
+      <div className="body-wrapper">
+        <Header />
+        <Feed />
+        <Footer />
+      </div>
     </>
   );
 }

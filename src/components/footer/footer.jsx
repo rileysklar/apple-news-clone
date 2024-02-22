@@ -4,7 +4,9 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      Built by <a href="https://rileysklar.io"> Riley Sklar</a>
+      <div className="footer-credit">
+        Built by <a href="https://rileysklar.io"> Riley Sklar</a>
+      </div>
     </div>
   );
 };

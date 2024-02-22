@@ -7,7 +7,7 @@ body {
   --medium-gray: #a2a2a2;
   --dark-gray-2: #272727;
   --dark-gray: #1a1a1a;
-  --accent-red: rgb(234, 115, 115);
+  --accent-red: rgb(194, 44, 49);
 
   color-scheme: light dark;
   color: var(--light-gray);
@@ -44,6 +44,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+.body-wrapper {
+  height: 100svh;
 }
 
 @media (min-width: 768px) {
