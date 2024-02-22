@@ -7,13 +7,6 @@
   gap: 1em;
 }
 
-input {
-  width: 86%;
-  border-radius: 10em;
-  padding: 1em 1em;
-  border: none;
-}
-
 a {
   background-color: transparent;
   color: var(--accent-red);
