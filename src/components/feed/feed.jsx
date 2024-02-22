@@ -1,18 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./feed.css";
 
-const calculateTimeAgo = (publishedAt) => {
-  // Convert publishedAt to a Date object
-  const publishedDate = new Date(publishedAt);
+const calculateTimeAgo = (pubDate) => {
+  console.log(pubDate);
+  const publishedDate = new Date(pubDate);
   const now = new Date();
-  // Calculate the difference in milliseconds
+
   const diffMillis = now.getTime() - publishedDate.getTime();
-  // Convert milliseconds to days, hours, and minutes
+
   const diffDays = diffMillis / (1000 * 60 * 60 * 24);
   const diffHours = diffMillis / (1000 * 60 * 60);
   const diffMinutes = diffMillis / (1000 * 60);
 
-  // Return the time ago in days, hours, or minutes
   if (diffDays >= 1) {
     return `${Math.round(diffDays)} days ago`;
   } else if (diffHours < 24 && diffHours >= 1) {
@@ -28,15 +27,13 @@ const Feed = ({ query }) => {
 
   useEffect(() => {
     const fetchNews = async () => {
-      // Placeholder for your new API key
-      const apiKey = "pub_38803c45c8b704cdd8a50f6b84d2723752bb8";
+      const apiKey = import.meta.env.VITE_NEWS_API_KEY;
       const url = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&q=politics`;
 
       try {
         const response = await fetch(url);
         const data = await response.json();
         if (data.status === "success") {
-          // Adjust to use the results array and check for non-null image_url
           const articlesWithImages = data.results.filter(
             (article) => article.image_url
           );

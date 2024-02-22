@@ -1,6 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  scroll-behavior: smooth;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -39,7 +42,10 @@ p {
 }
 
 .body-wrapper {
+  display: flex;
+  flex-direction: column;
   height: 100dvh;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
