@@ -1,5 +1,7 @@
 # Apple News Clone with React and Vite
 
+[Visit the live app](https://apple-news-clone.netlify.app/)
+
 This project is a clone of the Apple News app, recreated using React for the frontend interface and Vite as the build tool for a fast development experience. The app aims to replicate the core features of Apple News, presenting news articles in a user-friendly interface. Users can search for articles on various topics, read summaries, and access full articles. This project demonstrates the capabilities of React for building dynamic web applications and showcases Vite's efficient bundling and hot module replacement (HMR) for rapid development.
 
 ## Technology Stack
