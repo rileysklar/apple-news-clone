@@ -28,7 +28,7 @@ const Feed = ({ query }) => {
   useEffect(() => {
     const fetchNews = async () => {
       const apiKey = import.meta.env.VITE_NEWS_API_KEY;
-      const url = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&q=politics`;
+      const url = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&q=sports`;
 
       try {
         const response = await fetch(url);
