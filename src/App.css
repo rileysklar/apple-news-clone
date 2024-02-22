@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -25,14 +26,6 @@ body {
     color: var(--dark-gray);
     background-color: var(--light-gray);
   }
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  scroll-behavior: smooth;
-  overflow: scroll;
 }
 
 h1,
