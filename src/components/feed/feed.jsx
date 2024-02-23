@@ -79,7 +79,7 @@ const Feed = ({ query }) => {
                     rel="noopener noreferrer"
                     className="read-more-btn"
                   >
-                    Read more
+                    Read More
                   </a>
                   <div className="meta-info">
                     {calculateTimeAgo(article.pubDate)} |{" "}
