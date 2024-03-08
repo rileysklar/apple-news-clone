@@ -1,3 +1,12 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --light-gray: #eaeaea;
+  --medium-gray: #a2a2a2;
+  --dark-gray-2: #272727;
+  --dark-gray: #1a1a1a;
+  --accent-red: rgb(194, 44, 49);
+}
+
 .main-container {
   padding: 0em 1em 1em 1em;
 }
