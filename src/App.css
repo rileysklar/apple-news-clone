@@ -24,13 +24,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--dark-gray);
-    background-color: var(--light-gray);
-  }
-}
-
 h1,
 h2,
 h3,
